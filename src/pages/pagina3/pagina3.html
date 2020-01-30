@@ -1,0 +1,26 @@
+<ion-header>
+
+    <ion-navbar>
+        <ion-title>{{ mutante.nombre }}</ion-title>
+    </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+    <h2 text-center>
+        {{ mutante.poder }}
+    </h2>
+
+    <button ion-button color="primary" block (click)="irAtras()">
+        ir atras con evento
+    </button>
+
+    <button ion-button color="secondary" block (click)="irRoot()">
+        ir al root
+    </button>
+
+    <button ion-button color="danger" block navPop>
+        ir atras Html
+    </button>
+</ion-content>
+    
